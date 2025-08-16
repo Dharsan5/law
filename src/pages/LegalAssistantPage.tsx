@@ -1,9 +1,17 @@
 import React, { useState } from 'react';
-import { MessageSquare, Send, Loader, AlertTriangle, BookOpen } from 'lucide-react';
+import { MessageSquare, Send, Loader, AlertTriangle } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 
+interface Message {
+  id: number;
+  type: 'user' | 'assistant';
+  content: string;
+  timestamp: Date;
+  sources?: { title: string; url: string }[];
+}
+
 export const LegalAssistantPage: React.FC = () => {
-  const [messages, setMessages] = useState([
+  const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
       type: 'assistant',
@@ -17,7 +25,7 @@ export const LegalAssistantPage: React.FC = () => {
   const handleSend = async () => {
     if (!input.trim()) return;
 
-    const userMessage = {
+    const userMessage: Message = {
       id: messages.length + 1,
       type: 'user',
       content: input.trim(),
@@ -30,7 +38,7 @@ export const LegalAssistantPage: React.FC = () => {
 
     // Simulate AI response
     setTimeout(() => {
-      const aiResponse = {
+      const aiResponse: Message = {
         id: messages.length + 2,
         type: 'assistant',
         content: `Based on your query about "${input.trim()}", here's what I can tell you:
