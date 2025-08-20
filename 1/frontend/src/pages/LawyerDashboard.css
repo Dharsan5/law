@@ -1,0 +1,66 @@
+.lawyer-dashboard {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.lawyer-dashboard h2 {
+  color: #002c5f;
+  margin-bottom: 10px;
+}
+
+.case-list {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+
+.case-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+}
+
+.case-card h3 {
+  color: #002c5f;
+  margin-bottom: 0.5rem;
+}
+
+.case-card p {
+  margin: 0.3rem 0;
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.view-btn,
+.upload-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.view-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.upload-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.view-btn:hover {
+  background-color: #0056b3;
+}
+
+.upload-btn:hover {
+  background-color: #1e7e34;
+}

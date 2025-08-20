@@ -1,0 +1,43 @@
+.file-case-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.file-case-form h2 {
+  margin-bottom: 20px;
+  color: #002c5f;
+}
+
+.file-case-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.file-case-form input,
+.file-case-form textarea,
+.file-case-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.file-case-form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #002c5f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.file-case-form button:hover {
+  background-color: #001a3a;
+}

@@ -1,0 +1,59 @@
+.my-cases {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.case-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.case-table th,
+.case-table td {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.case-table th {
+  background-color: #003366;
+  color: white;
+}
+
+.case-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.case-table a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.case-table a:hover {
+  text-decoration: underline;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.back-button {
+  background-color: #003366;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #002147;
+}

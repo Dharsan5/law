@@ -1,0 +1,118 @@
+/* ===== Judge Dashboard Styling ===== */
+.judge-dashboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.judge-dashboard h2 {
+  color: #0b2f5e;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.judge-dashboard p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ===== Case List Grid ===== */
+.case-list {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ===== Case Card Styling ===== */
+.case-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.case-card h3 {
+  margin-bottom: 0.6rem;
+  color: #0b2f5e;
+  font-size: 1.3rem;
+}
+
+.case-card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* ===== Action Buttons ===== */
+.actions {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.actions button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+/* View Details Button */
+.view-btn {
+  background: #007bff;
+  color: white;
+}
+
+.view-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Add Judgment Button */
+.judgment-btn {
+  background: #6f42c1;
+  color: white;
+}
+
+.judgment-btn:hover {
+  background: #563d7c;
+  transform: scale(1.05);
+}
+
+/* Join Hearing Button */
+.hearing-btn {
+  background: #198754;
+  color: white;
+}
+
+.hearing-btn:hover {
+  background: #146c43;
+  transform: scale(1.05);
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

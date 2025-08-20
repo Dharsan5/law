@@ -1,0 +1,23 @@
+.analytics-page {
+  padding: 25px;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.chart-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+.chart-card h3 {
+  margin-bottom: 12px;
+}

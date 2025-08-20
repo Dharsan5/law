@@ -1,0 +1,56 @@
+.admin-section {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.admin-section h2 {
+  margin-bottom: 1rem;
+  color: #002c5f;
+}
+
+.admin-table-container {
+  overflow-x: auto;
+}
+
+.admin-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.admin-table-container th,
+.admin-table-container td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.admin-table-container th {
+  background-color: #002c5f;
+  color: white;
+}
+
+.admin-table-container a {
+  color: #007bff;
+}
+
+.admin-table-container button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.back-btn {
+  background-color: #002c5f;
+  color: white;
+  padding: 8px 16px;
+  margin-bottom: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.back-btn:hover {
+  background-color: #001f3f;
+}
