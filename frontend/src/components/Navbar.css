@@ -1,13 +1,17 @@
 
 .navbar {
-  background-color: #002c5f !important;
-  padding: 0.75rem 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: var(--primary-color);
+  padding: 1rem 0;
+  box-shadow: var(--shadow-lg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar .container {
-  max-width: 100%;
-  padding: 0 2rem;
+  max-width: 1200px;
+  padding: 0 var(--spacing-lg);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -16,20 +20,33 @@
 
 .navbar-brand {
   font-size: 1.8rem;
-  font-weight: 700;
-  color: #ffffff !important;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-light) !important;
   letter-spacing: 1px;
-  transition: color 0.3s ease-in-out;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .navbar-brand:hover {
-  color: #ffcc00 !important;
+  color: #cccccc !important;
+  transform: scale(1.05);
+}
+
+.navbar-brand::before {
+  content: "⚖";
+  font-size: 1.5rem;
 }
 
 .navbar-nav {
   display: flex;
   justify-content: flex-end;
-  gap: 2rem;
+  align-items: center;
+  gap: var(--spacing-lg);
+  list-style: none;
+  margin: 0;
 }
 
 .navbar-nav .nav-item {
@@ -37,16 +54,217 @@
 }
 
 .navbar-nav .nav-link {
-  color: #ffffff !important;
-  font-weight: 500;
-  font-size: 1.05rem;
-  padding: 0.5rem 0.75rem;
-  transition: color 0.3s ease-in-out, transform 0.2s;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: var(--font-weight-medium);
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-nav .nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--warning-color);
+  transition: all var(--transition-normal);
+  transform: translateX(-50%);
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffcc00 !important;
+  color: var(--text-light) !important;
+  background-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link:hover::before {
+  width: 80%;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--text-light) !important;
+}
+
+.navbar-nav .nav-link.active::before {
+  width: 80%;
+}
+
+/* User Profile Section */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: 0.5rem;
+  border-radius: var(--radius-lg);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--warning-color), var(--primary-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-light);
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-name {
+  color: var(--text-light);
+  font-weight: var(--font-weight-medium);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.user-role {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Logout Button Enhancement */
+.btn-logout {
+  background: linear-gradient(135deg, var(--warning-color), #ff9800);
+  color: var(--text-primary);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-medium);
+  font-size: 0.9rem;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-logout:hover {
+  background: linear-gradient(135deg, #ff9800, var(--warning-color));
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: var(--text-primary);
+}
+
+/* Mobile Responsive */
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 768px) {
+  .navbar .container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    width: 100%;
+    margin-top: var(--spacing-md);
+  }
+  
+  .navbar-nav .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: var(--spacing-md);
+  }
+  
+  .user-profile {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+  }
+  
+  .user-info {
+    align-items: center;
+  }
+}
+
+/* Notification Badge (for future use) */
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: var(--danger-color);
+  color: var(--text-light);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-bold);
+}
+
+/* Search Bar (for future implementation) */
+.navbar-search {
+  position: relative;
+  max-width: 300px;
+  margin: 0 var(--spacing-md);
+}
+
+.navbar-search input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-light);
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  border-radius: var(--radius-lg);
+  width: 100%;
+  transition: all var(--transition-normal);
+}
+
+.navbar-search input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-search input:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: var(--warning-color);
+  outline: none;
+}
+
+.navbar-search::before {
+  content: "🔍";
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 .navbar-nav .nav-link.active {

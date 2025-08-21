@@ -1,16 +1,16 @@
 {
-  "name": "backend",
+  "name": "justiflow-backend-api",
   "version": "1.0.0",
+  "description": "Backend API for JustiFlow Legal Case Management System",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["legal", "case-management", "court", "justice", "api", "nodejs"],
+  "author": "JustiFlow Development Team",
+  "license": "MIT",
   "dependencies": {
     "@huggingface/inference": "^4.7.1",
     "bcryptjs": "^3.0.2",

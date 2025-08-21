@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://justiflow.com/sitemap.xml
+
+# Disallow sensitive areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.env
+Disallow: /config/
+
+# Legal and compliance
+# This site contains legal case management tools
+# Please respect privacy and confidentiality of legal data

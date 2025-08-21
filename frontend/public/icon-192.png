@@ -1,0 +1,11 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="192" height="192" rx="24" fill="#002c5f"/>
+<g transform="translate(48, 48)">
+  <path d="M48 24L60 36H54V48H60L48 60L36 48H42V36H36L48 24Z" fill="#ffc107" stroke="#ffffff" stroke-width="2"/>
+  <rect x="18" y="72" width="60" height="4" fill="#ffc107"/>
+  <rect x="24" y="66" width="48" height="3" fill="#ffc107"/>
+  <rect x="30" y="78" width="36" height="3" fill="#ffc107"/>
+  <path d="M12 84H84V90H12V84Z" fill="#ffc107"/>
+</g>
+<text x="96" y="140" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">JustiFlow</text>
+</svg>
