@@ -1,46 +1,46 @@
-# JustiFlow - Digital Legal Case Management Portal
+# Justice Flow - Digital Legal Case Management Portal
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-v18+-green.svg)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-v19+-blue.svg)](https://reactjs.org/)
 
-## 🏛️ About JustiFlow
+## About Justice Flow
 
-JustiFlow is a comprehensive digital legal case management system designed to revolutionize the way legal proceedings are conducted. Our platform provides a seamless experience for lawyers, judges, administrators, and citizens to manage legal cases, conduct virtual hearings, and streamline the justice delivery process.
+Justice Flow is a comprehensive digital legal case management system designed to revolutionize the way legal proceedings are conducted. Our platform provides a seamless experience for lawyers, judges, administrators, and citizens to manage legal cases, conduct virtual hearings, and streamline the justice delivery process.
 
-## ⚖️ Key Features
+## Key Features
 
-### 🔐 **Multi-Role Authentication**
+### **Multi-Role Authentication**
 - **Citizens/Petitioners**: File cases, track progress, attend virtual hearings
 - **Lawyers**: Manage client cases, access legal documents, collaborate
 - **Judges**: Review cases, schedule hearings, make decisions
 - **Administrators**: Oversee system operations, manage users, analytics
 
-### 📋 **Case Management**
+### **Case Management**
 - Digital case filing and document upload
 - Real-time case status tracking
 - Automated notifications and reminders
 - Secure document storage and sharing
 
-### 🎥 **Virtual Court System**
+### **Virtual Court System**
 - High-quality video conferencing for hearings
 - Screen sharing for document presentation
 - Recording capabilities for official records
 - Multi-participant support
 
-### 🤖 **AI-Powered Features**
+### **AI-Powered Features**
 - Intelligent case categorization
 - Document analysis and summarization
 - Predictive analytics for case outcomes
 - Smart search and recommendation system
 
-### 📊 **Analytics & Reporting**
+### **Analytics & Reporting**
 - Comprehensive dashboards for all user roles
 - Performance metrics and KPIs
 - Custom report generation
 - Data visualization tools
 
-## 🚀 Technology Stack
+## Technology Stack
 
 ### Frontend
 - **React 19** - Modern UI library
@@ -62,7 +62,7 @@ JustiFlow is a comprehensive digital legal case management system designed to re
 - **Hugging Face** - NLP and AI models
 - **OpenAI API** - Advanced language processing
 
-## 📦 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js (v18 or higher)
@@ -90,7 +90,7 @@ The application will be available at:
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:5000
 
-## 🔒 Security Features
+## Security Features
 
 - JWT-based authentication
 - Role-based access control (RBAC)
@@ -101,6 +101,6 @@ The application will be available at:
 
 ---
 
-**JustiFlow** - *Empowering Justice Through Digital Transformation*
+**Justice Flow** - *Empowering Justice Through Digital Transformation*
 
-⚖️ *"Justice delayed is justice denied. We're here to ensure it's delivered efficiently."*
+*"Justice delayed is justice denied. We're here to ensure it's delivered efficiently."*

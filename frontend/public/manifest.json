@@ -1,6 +1,6 @@
 {
-  "name": "JustiFlow - Legal Case Management Portal",
-  "short_name": "JustiFlow",
+  "name": "Justice Flow - Legal Case Management Portal",
+  "short_name": "Justice Flow",
   "description": "Digital Legal Case Management and Virtual Court System for efficient justice delivery",
   "start_url": "/",
   "display": "standalone",

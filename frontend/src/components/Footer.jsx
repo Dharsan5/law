@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-section">
-            <div className="footer-brand">JustiFlow</div>
+            <div className="footer-brand">Justice Flow</div>
             <p className="footer-description">
               Transforming legal proceedings through digital innovation. 
               Providing secure, efficient, and accessible legal services 
@@ -47,15 +47,15 @@ const Footer = () => {
             <div className="contact-info">
               <div className="contact-item">
                 <div className="contact-icon">L</div>
-                <span>Legal District, Court Avenue</span>
+                <span>KEC,Erode</span>
               </div>
               <div className="contact-item">
                 <div className="contact-icon">P</div>
-                <span>+1 (555) 123-LEGAL</span>
+                <span>+91 9080105868</span>
               </div>
               <div className="contact-item">
                 <div className="contact-icon">E</div>
-                <span>info@justiflow.com</span>
+                <span>justiceflow.com</span>
               </div>
               <div className="contact-item">
                 <div className="contact-icon">T</div>
@@ -66,11 +66,8 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <div className="security-info">
-            <span>Secure & Encrypted Legal Platform</span>
-          </div>
           
-          <p>&copy; {currentYear} JustiFlow Legal Portal. All rights reserved.</p>
+          <p>&copy; {currentYear} Justice Flow Legal Portal. All rights reserved.</p>
           <p>Licensed Legal Technology Provider | Bar Certified Platform</p>
           
           <div className="footer-legal">

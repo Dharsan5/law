@@ -22,15 +22,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ✅ Serve uploads folder
+// Serve uploads folder
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-// ✅ Routes
+// Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/cases', caseRoutes);
 
-// 🔹 Hugging Face classify route
+// Hugging Face classify route
 app.post('/api/classify', async (req, res) => {
   const { complaint } = req.body;
 

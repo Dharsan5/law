@@ -1,0 +1,85 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon svg {
+  transition: transform var(--transition-normal);
+}
+
+.logo:hover .logo-icon svg {
+  transform: scale(1.1);
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+}
+
+/* Size Variants */
+.logo-small .logo-text {
+  font-size: 1rem;
+}
+
+.logo-small .logo-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.logo-medium .logo-text {
+  font-size: 1.25rem;
+}
+
+.logo-medium .logo-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-large .logo-text {
+  font-size: 1.5rem;
+}
+
+.logo-large .logo-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+/* Color Variants */
+.logo-default {
+  color: var(--primary-color);
+}
+
+.logo-light {
+  color: var(--text-light);
+}
+
+.logo-dark {
+  color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 1.1rem;
+  }
+  
+  .logo-large .logo-text {
+    font-size: 1.3rem;
+  }
+  
+  .logo-large .logo-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+}

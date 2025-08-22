@@ -42,7 +42,7 @@ const VideoConference = () => {
 
     const domain = 'meet.jit.si';
     const options = {
-      roomName: `JustiFlow-Case-${caseNumber}`,
+      roomName: `Justice-Flow-Case-${caseNumber}`,
       width: '100%',
       height: '600px',
       parentNode: jitsiContainerRef.current,

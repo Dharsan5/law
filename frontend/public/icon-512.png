@@ -10,6 +10,6 @@
   <circle cx="128" cy="240" r="8" fill="#ffc107"/>
   <circle cx="192" cy="240" r="8" fill="#ffc107"/>
 </g>
-<text x="256" y="350" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="36" font-weight="bold">JustiFlow</text>
+<text x="256" y="350" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Justice Flow</text>
 <text x="256" y="380" text-anchor="middle" fill="#ffc107" font-family="Arial, sans-serif" font-size="24">Legal Portal</text>
 </svg>

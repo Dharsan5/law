@@ -103,18 +103,6 @@
   flex-shrink: 0;
 }
 
-.footer-bottom {
-  border-top: 1px solid #333333;
-  padding-top: var(--spacing-lg);
-  text-align: center;
-}
-
-.footer-bottom p {
-  margin: 0.5rem 0;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9rem;
-}
-
 .footer-legal {
   display: flex;
   justify-content: center;
@@ -153,7 +141,7 @@
 }
 
 .security-info::before {
-  content: '🔒';
+  content: '';
   font-size: 1rem;
 }
 

@@ -58,7 +58,7 @@ const Register = () => {
   return (
     <div className="register-container">
       <div className="register-box">
-        <h2 className="text-center">Register for JustiFlow</h2>
+        <h2 className="text-center">Register for Justice Flow</h2>
         <form onSubmit={handleRegister}>
           {/* Role Selection */}
           <div className="form-group">

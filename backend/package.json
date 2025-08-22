@@ -1,25 +1,32 @@
 {
-  "name": "justiflow-backend-api",
+  "name": "justice-flow-backend-api",
   "version": "1.0.0",
-  "description": "Backend API for JustiFlow Legal Case Management System",
+  "description": "Backend API for Justice Flow Legal Case Management System",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
     "start": "node server.js"
   },
-  "keywords": ["legal", "case-management", "court", "justice", "api", "nodejs"],
-  "author": "JustiFlow Development Team",
+  "keywords": [
+    "legal",
+    "case-management",
+    "court",
+    "justice",
+    "api",
+    "nodejs"
+  ],
+  "author": "Justice Flow Development Team",
   "license": "MIT",
   "dependencies": {
     "@huggingface/inference": "^4.7.1",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.0",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.16.3",
-    "multer": "^2.0.1",
+    "mongoose": "^8.17.2",
+    "multer": "^2.0.2",
     "node-fetch": "^2.7.0",
     "nodemon": "^3.1.10",
     "openai": "^5.13.1"

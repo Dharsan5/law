@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://justiflow.com/sitemap.xml
+Sitemap: https://justiceflow.com/sitemap.xml
 
 # Disallow sensitive areas
 Disallow: /admin/

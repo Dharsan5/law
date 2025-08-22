@@ -9,12 +9,11 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Welcome to JustiFlow</h1>
+          <h1>Welcome to Justice Flow</h1>
           <p className="lead">
             A smarter way to manage, track, and attend legal case hearings online.
             Experience the future of legal proceedings with our comprehensive digital platform.
           </p>
-          <img src={courtImage} alt="Court Illustration" className="hero-img" />
           
           <div className="hero-cta">
             <Link to="/register" className="cta-button cta-primary">
@@ -85,7 +84,7 @@ const Home = () => {
 
       {/* How It Works */}
       <section className="how-to-use-section">
-        <h2 className="section-title">How JustiFlow Works</h2>
+        <h2 className="section-title">How Justice Flow Works</h2>
         <ol className="how-to-list">
           <li>
             <div className="step-content">

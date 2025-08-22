@@ -177,7 +177,7 @@ const App = () => {
           <Route path="/chatbot" element={<Chatbot />} />
         </Routes>
 
-        {/* ✅ Floating chatbot on all pages */}
+        {/* Floating chatbot on all pages */}
         <Chatbot />
 
         <Footer />

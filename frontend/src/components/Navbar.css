@@ -259,7 +259,7 @@
 }
 
 .navbar-search::before {
-  content: "🔍";
+  content: "";
   position: absolute;
   left: 0.75rem;
   top: 50%;

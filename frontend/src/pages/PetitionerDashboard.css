@@ -8,6 +8,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+  border: 1px solid #e0e0e0;
+}
+
+.dashboard-header h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+  text-shadow: none;
 }
 
 .notification-wrapper {
@@ -15,41 +29,65 @@
 }
 
 .notification-bell {
-  background: none;
-  border: none;
+  background: var(--primary-color);
+  border: 2px solid var(--primary-color);
   cursor: pointer;
   position: relative;
-  color: #333;
+  color: var(--text-light);
+  padding: 0.75rem;
+  border-radius: 50%;
+  transition: all var(--transition-normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-bell:hover {
+  background: var(--text-light);
+  color: var(--primary-color);
+  transform: scale(1.1);
 }
 
 .notification-badge {
   position: absolute;
-  top: -6px;
-  right: -6px;
-  background: red;
-  color: white;
-  font-size: 12px;
-  padding: 2px 5px;
+  top: -8px;
+  right: -8px;
+  background: var(--danger-color);
+  color: var(--text-light);
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  padding: 3px 6px;
   border-radius: 50%;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--bg-primary);
 }
 
 .notifications-dropdown {
   position: absolute;
   right: 0;
-  top: 36px;
-  width: 300px;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  z-index: 10;
+  top: 60px;
+  width: 320px;
+  background: var(--bg-primary);
+  border: 2px solid var(--primary-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  z-index: 1000;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .notifications-dropdown h4 {
   margin: 0;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  background: #f7f7f7;
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  background: var(--primary-color);
+  color: var(--text-light);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
 .notification-item {

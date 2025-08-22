@@ -78,7 +78,7 @@ const Login = () => {
       <div className="login-box">
         <div className="login-header">
           <h2>Welcome Back</h2>
-          <p className="login-subtitle">Sign in to access your JustiFlow account</p>
+          <p className="login-subtitle">Sign in to access your Justice Flow account</p>
         </div>
 
         {error && (
@@ -89,7 +89,7 @@ const Login = () => {
 
         {success && (
           <div className="alert alert-success">
-            ✅ {success}
+            {success}
           </div>
         )}
 
@@ -149,7 +149,7 @@ const Login = () => {
             className={`btn btn-primary ${isLoading ? 'loading' : ''}`}
             disabled={isLoading}
           >
-            {isLoading ? 'Signing In...' : '🚀 Sign In'}
+            {isLoading ? 'Signing In...' : 'Sign In'}
           </button>
         </form>
 

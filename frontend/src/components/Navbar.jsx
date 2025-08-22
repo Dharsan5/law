@@ -33,7 +33,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          JustiFlow
+          Justice Flow
         </Link>
         
         <button
